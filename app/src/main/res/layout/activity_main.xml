@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="260dp"
-            android:text="Login with Email"
+            android:text=" Đăng nhập bằng Email"
             android:textAlignment="center"
             android:textColor="@color/opacity"
         />
@@ -36,20 +36,20 @@
             android:layout_width="320dp"
             android:layout_height="48dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/border"
             android:layout_marginTop="300dp"
+            android:background="@drawable/border"
             android:orientation="vertical"
             android:padding="15dp">
+
             <EditText
                 android:id="@+id/txtEmail"
-                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:background="@null"
                 android:ems="18"
                 android:hint="Nhập email của bạn"
                 android:inputType="textEmailAddress"
-                android:textColor="@color/opacity"
-                android:background="@null"/>
+                android:textColor="@color/opacity" />
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -61,6 +61,14 @@
             android:text="   Email   "
             android:textColor="@color/main"
             android:textSize="17sp" />
+        <TextView
+            android:id="@+id/txtValidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/alert"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="350dp"/>
+
 <!---->
 <!--password-->
         <LinearLayout
@@ -68,7 +76,7 @@
             android:layout_width="320dp"
             android:layout_height="48dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="380dp"
             android:background="@drawable/border"
             android:orientation="vertical"
             android:padding="15dp">
@@ -80,7 +88,7 @@
                 android:hint="Nhập mật khẩu của bạn"
                 android:inputType="textPassword"
                 android:background="@null"
-                android:inputType="text" />
+               />
         </LinearLayout
 >
 
@@ -89,13 +97,30 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="70dp"
-            android:layout_marginTop="350dp"
+            android:layout_marginTop="370dp"
             android:background="#ffffff"
             android:text="   Password   "
             android:textColor="@color/main"
             android:textSize="17sp" />
 <!---->
 <!--Button Login-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="460dp"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:background="@drawable/button"
+                >
+            </Button>
+        </LinearLayout>
+
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

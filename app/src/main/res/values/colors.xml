@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main">#009EE2</color>
     <color name="opacity">#B3595959</color>
+    <color name="alert">#FF0000</color>
 </resources>
