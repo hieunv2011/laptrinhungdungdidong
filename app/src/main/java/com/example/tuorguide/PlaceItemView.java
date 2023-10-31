@@ -3,18 +3,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class HomeItemView extends RecyclerView.ViewHolder {
+public class PlaceItemView extends RecyclerView.ViewHolder {
     public TextView txtPlacename;
     public TextView txtDescription;
-    private home placesActivity;
+    private PlacesActivity placesActivity;
 
-    public void setPlacesActivity(home placesActivity) {
+    public void setPlacesActivity(PlacesActivity placesActivity) {
         this.placesActivity = placesActivity;
     }
 
-    public HomeItemView(View view){
+    public PlaceItemView(View view){
 
         super(view);
         txtPlacename =(TextView) view.findViewById(R.id.txtPlacename);
@@ -22,7 +20,8 @@ public class HomeItemView extends RecyclerView.ViewHolder {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HomeItemView.this.placesActivity.navigateToDetailPlace(getLayoutPosition());
+                PlaceItemView.this.placesActivity.navigateToDetailPlace(getLayoutPosition());
+
 
             }
         });

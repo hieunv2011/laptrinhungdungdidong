@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 String password= txtPassword.getText().toString().trim();
                 //Toast.makeText(getApplicationContext(),"You press Login Button "+email+password, Toast.LENGTH_LONG).show();
                 //Navigation next Screen
-                Intent intent =new Intent(MainActivity.this,home.class);
+                Intent intent =new Intent(MainActivity.this,PlacesActivity.class);
                 intent.putExtra("email",txtEmail.getText().toString().trim());
                 startActivity(intent);
             }

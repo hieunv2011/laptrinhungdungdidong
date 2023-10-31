@@ -8,28 +8,28 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class homeAdapter extends RecyclerView.Adapter<HomeItemView> {
+public class PlacesAdapter extends RecyclerView.Adapter<PlaceItemView> {
     private ArrayList<Place> homeData;
-    private home placesActivity;
-    homeAdapter(ArrayList<Place> homeData){
+    private PlacesActivity placesActivity;
+    PlacesAdapter(ArrayList<Place> homeData){
         this.homeData =homeData;
     }
 
-    public void setPlacesActivity(home placesActivity) {
+    public void setPlacesActivity(PlacesActivity placesActivity) {
         this.placesActivity = placesActivity;
     }
 
     @NonNull
     @Override
-    public HomeItemView onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public PlaceItemView onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.home_item_view,viewGroup,false);
-        HomeItemView homeItemView =new HomeItemView(view);
-        homeItemView.sethome(this.placesActivity);
-        return homeItemView;
+        PlaceItemView placeItemView =new PlaceItemView(view);
+        placeItemView.setPlacesActivity(this.placesActivity);
+        return placeItemView;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HomeItemView homeItemView, int i) {
+    public void onBindViewHolder(@NonNull PlaceItemView homeItemView, int i) {
         Place selectedPlace = homeData.get(i);
         String placeName = selectedPlace.getPlaceName();
         String description= selectedPlace.getDescription();
