@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".DetailPlaceActivity">
 
+        <RelativeLayout
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="284dp"
+            android:background="@drawable/user_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageButton
+                android:id="@+id/btnback"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/back"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="@null">
+
+            </ImageButton>
+        </RelativeLayout>
+
+
     <TextView
         android:id="@+id/txtPlaceName"
         android:layout_width="wrap_content"
@@ -31,14 +52,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.674"></TextView>
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="409dp"
-        android:layout_height="284dp"
-        android:background="@color/main"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
@@ -51,5 +64,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="664dp"
+        android:text="Chỉnh sửa thông tin "
+        android:background="@drawable/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,10 +7,16 @@ import java.io.Serializable;
 public class Place implements Serializable {
     private String placeName;
     private String description;
+    private Integer placeId;
 
-    public Place(String placeName, String description) {
+    public Place(String placeName, String description, Integer placeId) {
         this.placeName = placeName;
         this.description = description;
+        this.placeId=placeId;
+    }
+
+    public Integer getPlaceId() {
+        return placeId;
     }
 
     public String getPlaceName() {
